@@ -12,4 +12,7 @@ def list_stats(nums):
 numbers=[14, 3, 9, 27, 8, 21, 5, 18]
 stats=list_stats(numbers)
 for key,value in stats.items():
-    print(f"{key}:{value}")
+    if key== "average":
+         print(f"{key}:{value:.2f}")
+    else:
+        print(f"{key}:{value}")
